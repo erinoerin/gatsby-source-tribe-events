@@ -1,0 +1,9 @@
+{
+  "name": "gatsby-source-tribe-events",
+  "version": "1.0.0",
+  "main": "gatsby-node.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
