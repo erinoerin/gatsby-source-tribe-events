@@ -1,9 +1,24 @@
 {
   "name": "gatsby-source-tribe-events",
+  "description": "Gatsby source plugin to add WordPress Events Calendar nodes.",
   "version": "1.0.0",
+  "author": "Erin Olmon",
   "main": "gatsby-node.js",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-source",
+    "gatsby-plugin",
+    "wordpress",
+    "events",
+    "calendar",
+    "tribe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erinoerin/gatsby-source-tribe-events.git"
   }
 }

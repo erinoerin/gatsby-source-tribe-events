@@ -1,10 +1,20 @@
-# `gatsby-source-tribe-events`
+# gatsby-source-tribe-events
 
-Gets events from a WordPress site utilizing the Tribe Events plugin. This provides a work-around to challenges (as of August 2019) getting Tribe Events from the gatsby-source-wordpress plugin.
+Gatsby source plugin to add WordPress Events Calendar nodes created from Events Calendar endpoints:
+
+- events
+- venues
+- organizers
+- categories
+- tags
 
 ## Dependencies
 
 axios
+
+## Installation
+
+`npm install --save gatsby-source-tribe-events`
 
 ## Examples of usage
 
@@ -16,8 +26,11 @@ module.exports = {
     {
       resolve: "gatsby-source-tribe-events",
       options: {
+        // baseURL should include the protocol (https or http)
         baseURL: "https://mysite.tld",
-        maxEvents: 10 // optional, default: 10, max: 50
+
+        // maxEvents is optional, default: 10, max: 50
+        maxEvents: 10
       }
     }
   ]
@@ -26,13 +39,13 @@ module.exports = {
 
 ## How to query for data
 
-```js
-allTribeEvent {
+```graphql
+allTribeEvents {
     edges {
       node {
         id
         title
-        date
+        slug
         all_day
         start_date
         end_date
@@ -51,3 +64,8 @@ allTribeEvent {
     }
   }
 ```
+
+## ToDo
+
+- Create relationships between nodes
+- Create nodes for all events (more than 50)
