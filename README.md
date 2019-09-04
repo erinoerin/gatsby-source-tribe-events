@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: "gatsby-source-tribe-events",
       options: {
-        // baseURL should include the protocol (https or http)
-        baseURL: "https://mysite.tld",
+        // baseUrl should include the protocol (https or http)
+        baseUrl: "https://mysite.tld",
 
         // maxEvents is optional, default: 10, max: 50
         maxEvents: 10
